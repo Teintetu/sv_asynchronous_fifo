@@ -16,7 +16,7 @@ module top();
         rrstGen  = new(itf);
         w_clkGen.clkGenerator("wclk",10);
         r_clkGen.clkGenerator("rclk",10);
-        wrstGen.rstGenerator("wrst",15);//why?
+        wrstGen.rstGenerator("wrst",15);
         rrstGen.rstGenerator("rrst",10);
         repeat(10) @(posedge itf.rclk);
         $stop;
